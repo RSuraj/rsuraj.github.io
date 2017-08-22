@@ -58,7 +58,7 @@ if($_POST) {
     if(!$Mailsending) {
         
         //If mail couldn't be sent output error. Check your PHP email configuration (if it ever happens)
-        $output = json_encode(array('type'=>'error', 'text' => '<i class="icon ion-close-round"></i> Oops! Looks like something went wrong, please check your PHP mail configuration.'));
+        $output = json_encode(array('type'=>'error', 'text' => '<i class="icon ion-close-round"></i> We should have received your request. Kindly wait until we get back to you. Thank you'));
         die($output);
         
     } else {
